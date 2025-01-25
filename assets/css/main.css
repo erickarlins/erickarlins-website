@@ -68,9 +68,9 @@ mark {
 }
 
 .image-row img {
-    max-width: calc(20% - 10px); /* Fit five images in a row */
+    max-width: calc(18% - 10px); /* Fit five images in a row */
     height: auto; /* Maintain aspect ratio */
-    flex: 1 1 calc(20% - 10px); /* Ensure flexible sizing */
+    flex: 1 1 calc(18% - 10px); /* Ensure flexible sizing */
     object-fit: cover; /* Scale images without distortion */
     border-radius: 5px; /* Optional: round corners */
 }
