@@ -60,6 +60,23 @@ mark {
 	color: inherit;
 }
 
+.image-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.image-row img {
+    width: calc(25% - 10px); /* Adjust size to fit four images in a row */
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 input::-moz-focus-inner {
 	border: 0;
 	padding: 0;
