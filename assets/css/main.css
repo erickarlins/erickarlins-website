@@ -62,19 +62,17 @@ mark {
 
 .image-row {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Allow wrapping if necessary */
+    gap: 10px; /* Add space between images */
+    justify-content: center; /* Center the row */
 }
 
 .image-row img {
-    width: calc(25% - 10px); /* Adjust size to fit four images in a row */
-    max-width: 100%;
-    height: auto;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: calc(25% - 10px); /* Fit four images in a row */
+    height: auto; /* Maintain aspect ratio */
+    flex: 1 1 calc(25% - 10px); /* Ensure flexible sizing */
+    object-fit: cover; /* Scale images without distortion */
+    border-radius: 5px; /* Optional: round corners */
 }
 
 input::-moz-focus-inner {
